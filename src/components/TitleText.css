@@ -1,0 +1,44 @@
+.title-text {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #7FFFD4 0%, #87CEEB 50%, #D2B48C 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.title-text:hover {
+  transform: scale(1.05);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.title-text--small {
+  font-size: 2rem;
+}
+
+.title-text--medium {
+  font-size: 3rem;
+}
+
+.title-text--large {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .title-text--large {
+    font-size: 2.5rem;
+  }
+  
+  .title-text--medium {
+    font-size: 2rem;
+  }
+  
+  .title-text--small {
+    font-size: 1.5rem;
+  }
+} 

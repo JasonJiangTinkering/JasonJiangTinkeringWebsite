@@ -1,0 +1,53 @@
+/* Additional content sections for scrolling */
+.scroll-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.content-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.content-section.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-section h2 {
+  color: #4A4A4A;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.content-section p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .content-section p {
+    font-size: 1rem;
+  }
+} 

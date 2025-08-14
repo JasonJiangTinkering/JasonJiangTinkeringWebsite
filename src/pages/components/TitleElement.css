@@ -1,0 +1,110 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E0FFFF 0%, #F0F8FF 50%, #F5F5DC 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+}
+
+.home-page__content {
+  text-align: center;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  margin-bottom: 40px;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
+
+.home-page__title {
+  margin-bottom: 20px;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+.home-page__subtitle {
+  font-size: 1.5rem;
+  color: #8B7355;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  margin-top: 20px;
+  opacity: 0.8;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+
+.scroll-icon-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+
+.scroll-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-icon:hover {
+  opacity: 0.8;
+}
+
+/* Header mode styles */
+.home-page__content.header-mode {
+  height: 80px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.home-page__title.header-mode {
+  margin-bottom: 0;
+  transform: scale(0.8);
+}
+
+/* Smooth transitions for scroll animations */
+.title-element-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 400px;
+}
+
+.emulated-title-element-container {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .home-page__content {
+    padding: 30px 20px;
+  }
+  
+  .home-page__subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .scroll-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .home-page__content.header-mode {
+    height: 70px;
+    padding: 15px;
+  }
+} 
