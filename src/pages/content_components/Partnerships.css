@@ -1,0 +1,230 @@
+.partnerships-container {
+  width: 100%;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 100%);
+  border-radius: 24px;
+}
+
+.partnerships-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.partnerships-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.partnership-org {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.org-name {
+  color: #0c4a7a;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(12, 74, 122, 0.2);
+  padding-bottom: 12px;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Partner card uses class-card from ClassSection.css */
+.partner-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.partner-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.org-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e0e7ef;
+  border: 2px solid #d1dae4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: #265088;
+  flex-shrink: 0;
+}
+
+.partner-name-org {
+  flex: 1;
+  min-width: 0;
+}
+
+.partner-name-org h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: #17375c;
+}
+
+.partner-name-org .org-name {
+  font-size: 1rem;
+  color: #497aa9;
+  display: block;
+}
+
+.status-badge {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: auto;
+}
+
+.status-badge--scheduling {
+  background: #f7b500;
+}
+
+.partner-role {
+  color: #586a7f;
+  font-size: 1rem;
+  margin: 4px 0 7px 0;
+  font-weight: 500;
+}
+
+.partner-projects {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+  color: #265088;
+  font-size: 1rem;
+}
+
+.partner-projects li {
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.community-contacts {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 2px solid rgba(15, 23, 42, 0.1);
+}
+
+.contacts-title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.18);
+  transform: translateY(-4px);
+}
+
+.contact-card h3 {
+  margin: 0 0 8px 0;
+  color: #102a43;
+  font-size: 1.1rem;
+}
+
+.contact-role {
+  color: #64748b;
+  font-size: 1rem;
+  margin: 0 0 12px 0;
+}
+
+.contact-phone {
+  color: #0c4a7a;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projects-looking-for-partners {
+  margin: 44px 0;
+}
+
+.projects-title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.projects-list {
+  list-style: disc inside;
+  padding-left: 22px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #265088;
+}
+
+.projects-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.projects-list b {
+  color: #102a43;
+}
+
+.project-description {
+  color: #497aa9;
+  font-size: 1rem;
+}
+
+.project-desc {
+  display: block;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .partnerships-container {
+    padding: 24px 12px;
+  }
+
+  .org-name {
+    font-size: 1.25rem;
+  }
+
+  .partner-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

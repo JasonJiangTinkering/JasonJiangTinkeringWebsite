@@ -1,20 +1,10 @@
 import './TitleElement.css';
-import TitleText from '../../components/TitleText';
-import ContentSections from './ContentSections';
+import TitleText from '../../atomic_components/TitleText';
+import ContentSections from '../content_components/ContentSections';
 import { useEffect, useRef } from 'react';
 import { createScope, animate } from 'animejs';
 
-interface AnimationState {
-    hasScrolled: boolean;
-    scrollProgress: number;
-    isHeaderMode: boolean;
-}
-
-interface TitleElementProps {
-    animationState: AnimationState;
-}
-
-const TitleElement: React.FC<TitleElementProps> = ({ animationState }) => {
+const TitleElement: React.FC = () => {
     const root = useRef<HTMLDivElement>(null);
     const scope = useRef<any>(null);
 
@@ -46,30 +36,38 @@ const TitleElement: React.FC<TitleElementProps> = ({ animationState }) => {
     }, []);
 
     return (
-        <div className="home-page" ref={root}>
-            <div className="home-page__content">
-                <TitleText 
-                text="Jason Jiang's Website" 
-                size={animationState.isHeaderMode ? "medium" : "large"}
-                className="home-page__title"
+        <div className="title-component-container" ref={root}>
+            <div className="title-component-content">
+                <TitleText
+                    text="DRONE class"
+                    size="large"
+                    className="title-component-title"
                 />
-                {!animationState.isHeaderMode && (
-                    <>
-                        <div className="home-page__subtitle">
-                        Welcome to my personal website
-                        </div>
-                        <div className="scroll-icon-container">
-                            <img 
-                                src="/scroll-icon.png" 
-                                alt="Scroll down" 
-                                className="scroll-icon"
-                            />
-                        </div>
-                    </>
-                )}
+
+                <div className="title-component-subtitle">
+                    <a href="https://www.linkedin.com/in/jj27/" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', width: '100%', height: '100%', opacity: 0, pointerEvents: 'auto', left: 0, top: 0 }}>
+                        {/* Invisible link for accessibility */}
+                        <span style={{ display: 'none' }}>Jason Jiang LinkedIn</span>
+                    </a>
+                    Designed by Jason Jiang
+                    <br />
+                    
+                </div>
+                <br></br>
+                <div>
+                    Through collaboration & technology usage techniques, 
+                    <br />
+                    highschoolers can manifest change in the commmunity around them.
+                </div>
+                <div className="scroll-icon-container">
+                    <img
+                        src="/scroll-icon.png"
+                        alt="Scroll down"
+                        className="scroll-icon"
+                    />
+                </div>
             </div>
-            
-            <ContentSections animationState={animationState} />
+
         </div>
     )
 }

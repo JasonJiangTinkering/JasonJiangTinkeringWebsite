@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bbd16a82.css",
+    "main.js": "/static/js/main.545a3bf6.js",
+    "static/media/3dDesigning.jpg": "/static/media/3dDesigning.97aef79ebf75e80abcfa.jpg",
+    "static/media/DroneSplashArt.jpg": "/static/media/DroneSplashArt.fdb106f123b7ed16c2bf.jpg",
+    "static/media/dissectedDrone.jpg": "/static/media/dissectedDrone.64c571f6295e95571204.jpg",
+    "static/media/ServerDevelopment.jpg": "/static/media/ServerDevelopment.f02ee3f009c5aaf9d8a2.jpg",
+    "static/media/ydc.jpg": "/static/media/ydc.d7629a359e6d63f4d4ee.jpg",
+    "static/media/mep.png": "/static/media/mep.266841461e9032bc26e4.png",
+    "index.html": "/index.html",
+    "main.bbd16a82.css.map": "/static/css/main.bbd16a82.css.map",
+    "main.545a3bf6.js.map": "/static/js/main.545a3bf6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbd16a82.css",
+    "static/js/main.545a3bf6.js"
+  ]
+}
