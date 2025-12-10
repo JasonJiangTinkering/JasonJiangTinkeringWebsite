@@ -1,0 +1,128 @@
+.creative-morning-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 100%);
+  padding: 40px 20px;
+}
+
+.creative-morning-hero {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cm-title {
+  margin-bottom: 20px;
+}
+
+.cm-subtitle {
+  font-size: 1.3rem;
+  color: #4a5568;
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.cm-content-section,
+.cm-opportunity-section,
+.cm-cta-section {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.cm-content-section h2,
+.cm-opportunity-section h2,
+.cm-cta-section h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.cm-concept-card,
+.cm-opportunity-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cm-concept-card:hover,
+.cm-opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+}
+
+.cm-concept-card h3,
+.cm-opportunity-card h3 {
+  font-size: 1.5rem;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.cm-concept-card p,
+.cm-opportunity-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0;
+}
+
+.cm-cta-section {
+  background: linear-gradient(135deg, #E0FFFF 0%, #F0F8FF 50%, #F5F5DC 100%);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+.cm-cta-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2d3748;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.cm-cta-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .creative-morning-container {
+    padding: 20px 16px;
+  }
+
+  .creative-morning-hero {
+    padding: 30px 16px;
+    margin-bottom: 40px;
+  }
+
+  .cm-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cm-content-section h2,
+  .cm-opportunity-section h2,
+  .cm-cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cm-concept-card,
+  .cm-opportunity-card {
+    padding: 20px;
+  }
+
+  .cm-cta-section {
+    padding: 28px 20px;
+  }
+}
+

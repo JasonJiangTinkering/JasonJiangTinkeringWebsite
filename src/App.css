@@ -16,6 +16,41 @@ body {
   text-align: center;
 }
 
+.main-nav {
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+}
+
+.nav-link {
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: linear-gradient(135deg, #E0FFFF 0%, #F0F8FF 50%, #F5F5DC 100%);
+  color: #1a202c;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
