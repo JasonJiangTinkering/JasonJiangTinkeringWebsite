@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Handle Angular and React Router
+  RewriteRule ^index\.html$ - [L]
+  
+  # Handle assets (CSS, JS, images)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Route everything else to index.html
+  RewriteRule . /index.html [L]
+</IfModule>

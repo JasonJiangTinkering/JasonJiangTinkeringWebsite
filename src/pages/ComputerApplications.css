@@ -1,0 +1,265 @@
+.computer-applications-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 100%);
+  padding: 40px 20px;
+}
+
+.computer-applications-hero {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ca-title {
+  margin-bottom: 20px;
+}
+
+ol{
+  color: #4a5568;
+}
+.ca-subtitle {
+  font-size: 1.3rem;
+  color: #4a5568;
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.ca-content-section,
+.ca-opportunity-section,
+.ca-cta-section {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.ca-content-section h2,
+.ca-opportunity-section h2,
+.ca-cta-section h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.ca-concept-card,
+.ca-opportunity-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ca-concept-card:hover,
+.ca-opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+}
+
+.ca-concept-card h3,
+.ca-opportunity-card h3 {
+  font-size: 1.5rem;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.ca-concept-card p,
+.ca-opportunity-card p {
+  text-align: left;
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0;
+}
+
+.ca-cta-section {
+  background: linear-gradient(135deg, #96f1f1 0%, #b3cfe7 50%, #f0f0db 100%);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+.ca-cta-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2d3748;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ca-cta-text:last-child {
+  margin-bottom: 0;
+}
+
+.ca-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ca-image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ca-image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .computer-applications-container {
+    padding: 20px 16px;
+  }
+
+  .computer-applications-hero {
+    padding: 30px 16px;
+    margin-bottom: 40px;
+  }
+
+  .ca-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .ca-content-section h2,
+  .ca-opportunity-section h2,
+  .ca-cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .ca-concept-card,
+  .ca-opportunity-card {
+    padding: 20px;
+  }
+
+  .ca-cta-section {
+    padding: 28px 20px;
+  }
+
+  .ca-image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .ca-image-gallery img {
+    height: 150px;
+  }
+}
+
+/* Modal Styles */
+.ca-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.ca-modal-content {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.ca-modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.ca-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.ca-modal-close:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .ca-modal-content {
+    padding: 15px;
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+
+  .ca-modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+
+  .ca-modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: -12px;
+    right: -12px;
+  }
+}
