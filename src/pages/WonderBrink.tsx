@@ -1,12 +1,12 @@
 import React from 'react';
 import TitleText from '../atomic_components/TitleText';
-import './CreativeMorning.css';
+import './WonderBrink.css';
 
-const CreativeMorning: React.FC = () => {
+const WonderBrink: React.FC = () => {
   return (
     <div className="creative-morning-container">
       <div className="creative-morning-hero">
-        <TitleText text="CreativeMorning @ Buffalo" size="large" className="cm-title" />
+        <TitleText text="WonderBrink @ Buffalo" size="large" className="cm-title" />
         <p className="cm-subtitle">
 
         My close mentor homeschooled her kids to protect their ability to think. She focused so much time on making sure her kids understood how to see the world practically. One that sets goals that start with planning the resources the local community has access to. A much better strategy for working-class people. She believed school was not providing those skills for working-class people.
@@ -302,4 +302,4 @@ Students could be fighting for greater ability to be an active listener in conve
   );
 };
 
-export default CreativeMorning;
+export default WonderBrink;
